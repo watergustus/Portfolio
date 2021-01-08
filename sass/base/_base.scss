@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway'); /*--- Nav Font --*/
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway'); /*--- Heading Font --*/
+@import 'base.palette';
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+blockquote{
+    border-left: 10px solid $color3;
+    padding: 24px;
+    background: $color13;
+    color: $color9;
+}
+
+section{
+    color: $color12;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 300%;
+    font-weight: 700;
+    text-align: center;
+    margin: 10%;
+    text-shadow: 0px 0px 250px $color2;
+}
+
+h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 200%;
+    font-weight: 700;
+    color: #2C2C2C;
+    text-align: center;
+    text-decoration: underline;
+}
+
+p{
+    font-family: 'Raleway', serif;
+    color: #2C2C2C;
+    font-size: 140%;
+    line-height: 180%;
+    text-align: justify;
+    font-weight: 300;
+}
+
+img{
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+// Navigation (Start Nav)
+nav{
+    float: left;
+    padding: 5% 5% 0 0;
+    height: 50px;
+}
+
+nav ul{
+    list-style: none;
+    float: left;
+}
+
+nav ul li{
+    font-family: 'Raleway', sans-serif;
+    font-size: 120%;
+}
+
+nav ul li a{
+    color: $color12;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+nav ul, nav:active ul{
+    display: none;
+    left: 45px;
+    top: 60px;
+    padding: 8px 0;
+    width: 20%;
+    z-index: 1000;
+}
+
+nav li{
+    width: 100%;
+    padding: 8px 0 10px 7px;
+    margin: 20px 0 0 30px;
+}
+
+nav:hover ul{
+    display: block;
+    position: absolute;
+}
+
+#menu-icon{
+    width: 50px;
+    height: 50px;
+    // background: url(img/nav-icon.png) center white;
+    display: inline-block;
+    margin: 50px 0 0 50px;
+}
+
+// end of nav bar
